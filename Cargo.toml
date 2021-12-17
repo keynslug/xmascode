@@ -1,0 +1,21 @@
+[package]
+name = "xmascode"
+version = "0.1.0"
+authors = ["Andrew Mayorov <encube.ul@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+peg = "0.7.0"
+bitset-core = "0.1.1"
+devtimer = "4.0.1"
+criterion = "0.3.5"
+
+[[bench]]
+name = "d3bitset"
+harness = false
+
+[[bench]]
+name = "d3dumb"
+harness = false
